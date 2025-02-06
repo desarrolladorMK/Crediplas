@@ -1,0 +1,94 @@
+.carousel-item img {
+    height: 700px;
+    object-fit: cover;
+}
+
+.banner-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.banner-image {
+    width: 300%;
+    max-width: 1500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.financing-section {
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.financing-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.financing-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.testimonials-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-card {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.testimonial-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.partners-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo suave para destacar la sección */
+}
+
+.partners-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.partners-section .carousel {
+    max-width: 800px; /* Controla el ancho máximo del carrusel */
+    margin: 0 auto; /* Centra el carrusel */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un look moderno */
+}
+
+.partners-section .carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Bordes redondeados en las imágenes también */
+    object-fit: contain; /* Asegura que las imágenes no se deformen */
+}
