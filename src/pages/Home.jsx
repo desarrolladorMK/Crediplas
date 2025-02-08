@@ -102,15 +102,15 @@ const Home = () => {
                         
                     </div>
                 </div>
-            </div>
+            </div><br /><br />
             <div className="banner-section">
                 <h2>Metodos de Pago</h2>
                 <img
-                    className="banner-image"
+                    className="banner-images"
                     src="/pse.png"
                     alt="Banner"
                 />
-            </div>
+            </div><br /><br />
             <div className="partners-section">
                 <h2>Nuestros Aliados</h2>
                 <Carousel controls={false} indicators={false} interval={2000} pause={false}>

@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faXTwitter, faInstagram, faLinkedinIn, faTiktok,faWhatsapp  } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import './Footer.css'; // Asegúrate de crear este archivo para los estilos
 
@@ -47,11 +49,25 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-social">
-                <a href="https://facebook.com" className="social-icon"><i className="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com" className="social-icon"><i className="fab fa-twitter"></i></a>
-                <a href="https://instagram.com" className="social-icon"><i className="fab fa-instagram"></i></a>
-                <a href="https://linkedin.com" className="social-icon"><i className="fab fa-linkedin-in"></i></a>
-            </div>
+      <a href="https://facebook.com" className="social-icon">
+        <FontAwesomeIcon icon={faFacebookF} />
+      </a>
+      <a href="https://twitter.com" className="social-icon">
+        <FontAwesomeIcon icon={faXTwitter} />
+      </a>
+      <a href="https://instagram.com" className="social-icon">
+        <FontAwesomeIcon icon={faInstagram} />
+      </a>
+      <a href="https://linkedin.com" className="social-icon">
+        <FontAwesomeIcon icon={faLinkedinIn} />
+      </a>
+      <a href="https://tiktok.com" className="social-icon">
+        <FontAwesomeIcon icon={faTiktok} />
+      </a>
+      <a href="https://tiktok.com" className="social-icon">
+        <FontAwesomeIcon icon={faWhatsapp} />
+      </a>
+    </div>
         </footer>
     );
 };
