@@ -1,7 +1,5 @@
-.carousel-item img {
-    height: 800px;
-    object-fit: cover;
-}
+/* Estilos generales para el contenido */
+
 
 .banner-section {
     text-align: center;
@@ -9,7 +7,7 @@
 }
 
 .banner-image {
-    width: 300%;
+    width: 100%;
     max-width: 1500px;
     height: auto;
     border-radius: 10px;
@@ -50,15 +48,16 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .testimonial-card {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    
 }
 
 .testimonial-image {
@@ -67,10 +66,11 @@
     border-radius: 10px;
     margin-bottom: 10px;
 }
+
 .partners-section {
     text-align: center;
     padding: 20px;
-    background-color: #f9f9f9; /* Fondo suave para destacar la sección */
+    background-color: #f9f9f9;
 }
 
 .partners-section h2 {
@@ -80,17 +80,17 @@
 }
 
 .partners-section .carousel {
-    max-width: 800px; /* Controla el ancho máximo del carrusel */
-    margin: 0 auto; /* Centra el carrusel */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un look moderno */
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .partners-section .carousel img {
     width: 100%;
     height: auto;
-    border-radius: 15px; /* Bordes redondeados en las imágenes también */
-    object-fit: contain; /* Asegura que las imágenes no se deformen */
+    border-radius: 15px;
+    object-fit: contain;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -118,14 +118,123 @@
     gap: 20px;
     padding: 20px;
     background-color: #003a44;
-  }
-  
-  .social-icon {
+}
+
+.social-icon {
     color: white;
     font-size: 24px;
     transition: color 0.3s;
-  }
-  
-  .social-icon:hover {
+}
+
+.social-icon:hover {
     color: #007bff;
-  }
+}
+
+/* Responsive Design */
+
+/* Pantallas grandes: 1024px en adelante */
+@media (min-width: 1024px) {
+    .carousel-item img {
+        height: 700px;
+    }
+
+    .banner-image {
+        max-width: 1400px;
+    }
+
+    .testimonial-card {
+        width: 350px;
+    }
+}
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .carousel-item img {
+        height: 600px;
+    }
+
+    .banner-image {
+        max-width: 1200px;
+    }
+
+    .testimonial-card {
+        width: 300px;
+    }
+}
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 500px;
+    }
+
+    .banner-image {
+        max-width: 1000px;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .testimonial-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .partners-section .carousel {
+        max-width: 600px;
+    }
+}
+
+/* Smartphones grandes */
+@media (max-width: 480px) {
+    .carousel-item img {
+        height: 400px;
+    }
+
+    .banner-image {
+        max-width: 90%;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .partners-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .partners-section .carousel {
+        max-width: 400px;
+    }
+}
+
+/* Smartphones pequeños */
+@media (max-width: 320px) {
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .banner-image {
+        max-width: 100%;
+    }
+
+    .testimonial-card {
+        padding: 10px;
+    }
+
+    .partners-section .carousel {
+        max-width: 300px;
+    }
+
+    .footer-social {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+    }
+}

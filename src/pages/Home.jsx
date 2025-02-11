@@ -8,7 +8,7 @@ import './Home.css'; // Asegúrate de crear este archivo para los estilos person
 const Home = () => {
     return (
         <div>
-            <Header />
+            <Header /><br /><br />
             <Carousel controls={true} indicators={false} interval={null}>
                 <Carousel.Item>
                     <img
