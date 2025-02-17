@@ -11,11 +11,11 @@ const Header = () => {
                 </div>
                 <ul className="nav-links">
                     <li><Link to="/">Inicio</Link></li>
-                    <li><Link to="/turismo-medico">Turismo Médico</Link></li>
-                    <li><Link to="/implante-capilar">Implante Capilar</Link></li>
+                    <li><Link to="/turismo">Turismo Médico</Link></li>
+                    <li><Link to="/implante">Implante Capilar</Link></li>
                     <li><Link to="/financiacion">Financiación</Link></li>
-                    <li><Link to="/clinicas">Clínicas</Link></li>
-                    <li><Link to="/medicina-estetica">Medicina Estética</Link></li>
+                    <li><Link to="/clinica">Clínicas</Link></li>
+                    <li><Link to="/medicina">Medicina Estética</Link></li>
                     <li><Link to="/solicitud-tarjeta-credito">Solicitud Tarjeta Crédito</Link></li>
                 </ul>
             </nav>
