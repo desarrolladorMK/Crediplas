@@ -4,6 +4,8 @@ import Implante from "../pages/Implante"
 import Financiacion from "../pages/Financiacion"
 import Clinica from "../pages/Clinicas"
 import Medicina from "../pages/Medicina"
+import CirujanoP from "../pages/ContextCirujanos/CirujanoP"
+import Perez from "../pages/ContextCirujanos/hijos/Perez"
 
 export let routes = [
     {
@@ -30,6 +32,15 @@ export let routes = [
       path: '/medicina',
       element: < Medicina />,
     },
+    {
+      path: '/cirujano-context',
+      element: <CirujanoP />,
+    }, 
+    {
+      path: '/perez',
+      element: <Perez />,
+      }
+    
 
 
   

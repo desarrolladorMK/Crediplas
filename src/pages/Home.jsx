@@ -4,68 +4,42 @@ import Footer from "../components/Footer";
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css'; // Asegúrate de crear este archivo para los estilos personalizados
+import { BrowserRouter as Router, Route, Routes, useNavigate, useParams } from 'react-router-dom';
 
+// Datos de las imágenes con su información
+const slides = [
+    { src: "/cirujanos.jpg", alt: "", title: "",  route: "/cirujano-context" },
+    { src: "/bariatrica.jpg", alt: "", title: "", description: "Procedimientos de cirugía bariátrica." },
+    { src: "/odontologia.jpg", alt: "", title: "", description: "Tratamientos odontológicos avanzados." },
+    { src: "/implantes.jpg", alt: "", title: "", description: "Implantes dentales y corporales." },
+    { src: "/clinicas.jpg", alt: "", title: "", description: "Información sobre nuestras clínicas aliadas." },
+    { src: "/turismo.jpg", alt: "", title: "", description: "Experiencias de turismo médico." },
+    { src: "/suministros.jpg", alt: "", title: "", description: "Suministros y equipos médicos." },
+];
+
+// Componente Home con el carrusel
 const Home = () => {
+    const navigate = useNavigate();
+
     return (
         <div>
-            <Header /><br /><br />
+            <Header />
+            <br /><br />
             <Carousel controls={true} indicators={false} interval={null}>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="/cirujanos.jpg"
-                        alt="First slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="/bariatrica.jpg"
-                        alt="Second slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="/odontologia.jpg"
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="/implantes.jpg"
-                        alt="Fourth slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="/clinicas.jpg"
-                        alt="Fifth slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="/turismo.jpg"
-                        alt="Sixth slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="/financiacion.jpg"
-                        alt="Seventh slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="/suministros.jpg"
-                        alt="Eighth slide"
-                    />
-                </Carousel.Item>
+                {slides.map((slide, index) => (
+                    <Carousel.Item key={index}>
+                        <img className="d-block w-100" src={slide.src} alt={slide.alt} />
+                        <Carousel.Caption>
+                            <h3>{slide.title}</h3>
+                            <p 
+                                style={{ cursor: "pointer", opacity: 0 }}
+                                onClick={() => navigate(slide.route)}
+                            >
+                                Más información
+                            </p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                ))}
             </Carousel>
             
             <div className="banner-section">
