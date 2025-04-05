@@ -5,8 +5,9 @@ import Financiacion from "../pages/Financiacion"
 import Clinica from "../pages/Clinicas"
 import Medicina from "../pages/Medicina"
 import CirujanoP from "../pages/ContextCirujanos/CirujanoP"
-import Perez from "../pages/ContextCirujanos/hijos/Perez"
-
+import CirujanoDatalle from "../pages/ContextCirujanos/hijos/CirujanoDatalle"
+import BariatricoDetalle from "../pages/Bariatricos/hijos/Hbariatricos"
+import BariatricosP from "../pages/Bariatricos/Bariatricos"
 export let routes = [
     {
       path: '/',
@@ -37,12 +38,20 @@ export let routes = [
       element: <CirujanoP />,
     }, 
     {
-      path: '/perez',
-      element: <Perez />,
-      }
-    
+      path: '/cirujano/:id',
+      element: <CirujanoDatalle />,
+    },
+    {
+      path: '/bariatricos',
+      element: <BariatricosP />,
+    },
+    {
+      path: '/bariatricos/:id',
+      element: <BariatricoDetalle />,
+    },
+  ];
 
 
   
     
-    ]
+    

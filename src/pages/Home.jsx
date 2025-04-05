@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Routes, useNavigate, useParams } from '
 // Datos de las imágenes con su información
 const slides = [
     { src: "/cirujanos.jpg", alt: "", title: "",  route: "/cirujano-context" },
-    { src: "/bariatrica.jpg", alt: "", title: "", description: "Procedimientos de cirugía bariátrica." },
+    { src: "/bariatrica.jpg", alt: "", title: "", route: "/bariatricos"},
     { src: "/odontologia.jpg", alt: "", title: "", description: "Tratamientos odontológicos avanzados." },
     { src: "/implantes.jpg", alt: "", title: "", description: "Implantes dentales y corporales." },
     { src: "/clinicas.jpg", alt: "", title: "", description: "Información sobre nuestras clínicas aliadas." },

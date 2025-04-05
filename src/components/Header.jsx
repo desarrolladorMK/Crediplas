@@ -27,7 +27,7 @@ const Header = () => {
                     <li><Link to="/financiacion" onClick={toggleMenu}>Financiación</Link></li>
                     <li><Link to="/clinica" onClick={toggleMenu}>Clínicas</Link></li>
                     <li><Link to="/medicina" onClick={toggleMenu}>Medicina Estética</Link></li>
-                    <li><Link to="/solicitud-tarjeta-credito" onClick={toggleMenu}>Solicitud Tarjeta Crédito</Link></li>
+                    <li><Link to="https://www.101fintech.com/SolicitudTarjeta.aspx?fnt=Crediplas" onClick={toggleMenu}>Solicitud Tarjeta Crédito</Link></li>
                 </ul>
             </nav>
         </header>

@@ -1,0 +1,22 @@
+/* Perez.css */
+
+.Detalle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .Detalle-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .Detalle-img:hover {
+    transform: scale(1.02);
+  }
+  
