@@ -5,14 +5,15 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css'; // Asegúrate de crear este archivo para los estilos personalizados
 import { BrowserRouter as Router, Route, Routes, useNavigate, useParams } from 'react-router-dom';
+import { routes } from '../router/RouterApp';
 
 // Datos de las imágenes con su información
 const slides = [
     { src: "/cirujanos.jpg", alt: "", title: "",  route: "/cirujano-context" },
     { src: "/bariatrica.jpg", alt: "", title: "", route: "/bariatricos"},
-    { src: "/odontologia.jpg", alt: "", title: "", description: "Tratamientos odontológicos avanzados." },
+    { src: "/odontologia.jpg", alt: "", title: "",route: "/Odontologia"},
     { src: "/implantes.jpg", alt: "", title: "", description: "Implantes dentales y corporales." },
-    { src: "/clinicas.jpg", alt: "", title: "", description: "Información sobre nuestras clínicas aliadas." },
+    { src: "/clinicas.jpg", alt: "", title: "", route: "/Clinica"},
     { src: "/turismo.jpg", alt: "", title: "", description: "Experiencias de turismo médico." },
     { src: "/suministros.jpg", alt: "", title: "", description: "Suministros y equipos médicos." },
 ];

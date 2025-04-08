@@ -1,7 +1,7 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { useNavigate } from "react-router-dom";
-import bariatricos from "../../data/Bariatricos";
+import bariatricos from "../../data/BariatricosData";
 
 
 
@@ -14,18 +14,18 @@ const BariatricosP = () => {
             <div className="cirujanos-container">
                 <h1>Cirujanos Bariatricos</h1>
                 <div className="cirujanos-grid">
-                    { bariatricos.map(bariatricos => (
+                    { bariatricos.map( bariatricos2 => (
                        <div
-                       key={bariatricos.id}
+                       key={ bariatricos2.id}
                        className="cirujano-card"
-                       onClick={() => navigate(`/cirujano/${bariatricos.id}`)}
+                       onClick={() => navigate(`/bariatricos/${ bariatricos2.id}`)}
                      >
-                       <img src={bariatricos.imagen} alt={`Cirujano ${bariatricos.id}`} className="cirujano-img" />
+                       <img src={ bariatricos2.imagen} alt={`bariatricos ${ bariatricos2.id}`} className="cirujano-img" />
                        <button
                          className="cirujano-btn"
                          onClick={(e) => {
                            e.stopPropagation();
-                           navigate(`/cirujano/${bariatricos.id}`);
+                           navigate(`/bariatricos/${ bariatricos2.id}`);
                          }}
                        >
                          Más información

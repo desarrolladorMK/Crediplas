@@ -17,14 +17,14 @@ const Footer = () => {
                 <div className="footer-section links">
                     <h2>Servicios</h2>
                     <ul>
-                        <li><Link to="/clinicas">Clínicas</Link></li>
-                        <li><Link to="/turismo-medico">Turismo Médico</Link></li>
-                        <li><Link to="/implante-capilar">Implante Capilar</Link></li>
+                        <li><Link to="/Clinica">Clínicas</Link></li>
+                        <li><Link to="/">Turismo Médico</Link></li>
+                        <li><Link to="">Implante Capilar</Link></li>
                         <li><Link to="/financiacion">Financiación</Link></li>
-                        <li><Link to="/contactenos">Contáctenos</Link></li>
-                        <li><Link to="/recomendaciones">Recomendaciones</Link></li>
-                        <li><Link to="/farmacia">Farmacia</Link></li>
-                        <li><Link to="/terminos-condiciones">Términos y Condiciones</Link></li>
+                        <li><Link to="">Contáctenos</Link></li>
+                        <li><Link to="">Recomendaciones</Link></li>
+                        <li><Link to="">Farmacia</Link></li>
+                        <li><Link to="">Términos y Condiciones</Link></li>
                     </ul>
                 </div>
                 <div className="footer-section partners">
@@ -49,22 +49,22 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-social">
-      <a href="https://facebook.com" className="social-icon">
+      <a href="https://www.facebook.com/people/Crediplas/100092009985178/?mibextid=LQQJ4d" className="social-icon">
         <FontAwesomeIcon icon={faFacebookF} />
       </a>
-      <a href="https://twitter.com" className="social-icon">
+      <a href="https://x.com/crediplas_?s=21&t=4yYuGZm5s84KA_Ec_RfFCg" className="social-icon">
         <FontAwesomeIcon icon={faXTwitter} />
       </a>
-      <a href="https://instagram.com" className="social-icon">
+      <a href="https://www.instagram.com/crediplas__/?igshid=YmMyMTA2M2Y%3D" className="social-icon">
         <FontAwesomeIcon icon={faInstagram} />
       </a>
-      <a href="https://linkedin.com" className="social-icon">
+      <a href="https://www.linkedin.com/in/crediplas-undefined-2a6416275/" className="social-icon">
         <FontAwesomeIcon icon={faLinkedinIn} />
       </a>
-      <a href="https://tiktok.com" className="social-icon">
+      <a href="https://www.tiktok.com/@crediplas_" className="social-icon">
         <FontAwesomeIcon icon={faTiktok} />
       </a>
-      <a href="https://tiktok.com" className="social-icon">
+      <a href="https://api.whatsapp.com/send?phone=573207334386" className="social-icon">
         <FontAwesomeIcon icon={faWhatsapp} />
       </a>
     </div>
