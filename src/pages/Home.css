@@ -135,7 +135,8 @@
 /* Pantallas grandes: 1024px en adelante */
 @media (min-width: 1024px) {
     .carousel-item img {
-        height: 700px;
+        height: 450px;
+        
     }
 
     .banner-image {
@@ -150,7 +151,7 @@
 /* Tablets y pantallas medianas */
 @media (max-width: 1024px) and (min-width: 769px) {
     .carousel-item img {
-        height: 600px;
+        height: 450px;
     }
 
     .banner-image {
@@ -165,7 +166,7 @@
 /* Tablets y pantallas medianas */
 @media (max-width: 768px) {
     .carousel-item img {
-        height: 500px;
+        height: 350px;
     }
 
     .banner-image {
