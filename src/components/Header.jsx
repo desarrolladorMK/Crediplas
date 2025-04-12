@@ -13,7 +13,7 @@ const Header = () => {
         <header className="header">
             <nav className="nav">
                 <div className="logo">
-                    <img src="/logo.jpg" alt="Logo" className="logo-img" />
+                    <img src="/logo2.png" alt="Logo" className="logo-img" />
                 </div>
                 <button className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
                     <span className="bar"></span>
