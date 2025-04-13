@@ -41,7 +41,7 @@ const BariatricosP = () => {
     button: {
       width: "100%",
       padding: "12px",
-      backgroundColor: "#007b7f",
+      backgroundColor: " #003a44",
       color: "#fff",
       border: "none",
       fontWeight: "bold",

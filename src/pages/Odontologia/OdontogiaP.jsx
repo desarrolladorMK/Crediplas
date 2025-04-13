@@ -12,7 +12,7 @@ const OdontologiaP = () => {
         <div>
             <Header />
             <div className="cirujanos-container">
-                <h1>Odontología</h1>
+                
                 <div className="cirujanos-grid">
                     { Odontologia.map( Odontologia2 => (
                        <div

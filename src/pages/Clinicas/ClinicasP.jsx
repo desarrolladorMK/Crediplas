@@ -12,7 +12,7 @@ const ClinicaP = () => {
         <div>
             <Header />
             <div className="cirujanos-container">
-                <h1>Clinicas</h1>
+                
                 <div className="cirujanos-grid">
                     { Clinica.map( Clinica2 => (
                        <div

@@ -1,5 +1,42 @@
-/* Estilos generales para el contenido */
+/* Estilos para la sección de métodos de pago */
+.metodos {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
 
+.metodos-image {
+    width: 100%;
+    max-width: 550px; /* Tamaño base para pantallas medianas */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    display: inline-block; /* Para centrar correctamente */
+}
+
+/* Efecto hover mejorado */
+@media (hover: hover) {
+    .metodos-image:hover {
+        transform: translateY(-5px) scale(1.05); /* Levanta y escala */
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+        opacity: 0.95; /* Ligeramente más opaco */
+    }
+}
+  
+  .banner-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .banner-image:hover {
+    transform: scale(1.05);
+  }
+  
 
 .banner-section {
     text-align: center;
@@ -38,11 +75,7 @@
     margin: 40px 0;
 }
 
-.testimonials-section h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
+
 
 .testimonials {
     display: flex;
@@ -58,13 +91,29 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease; /* Para hover en la tarjeta */
 }
 
 .testimonial-image {
     width: 100%;
+    max-height: 300px; /* Limitar altura para consistencia */
     height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
+    object-fit: cover; /* Recortar para llenar el espacio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Para hover */
+}
+
+/* Efecto hover para imágenes de testimonios (solo en dispositivos que soportan hover) */
+@media (hover: hover) {
+    .testimonial-card:hover {
+        transform: translateY(-5px); /* Levanta la tarjeta */
+    }
+
+    .testimonial-image:hover {
+        transform: scale(1.05); /* Escala la imagen */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    }
 }
 
 .partners-section {
@@ -146,6 +195,10 @@
     .testimonial-card {
         width: 350px;
     }
+
+    .testimonial-image {
+        max-height: 250px; /* Ajustar altura para pantallas grandes */
+    }
 }
 
 /* Tablets y pantallas medianas */
@@ -186,6 +239,15 @@
     .partners-section .carousel {
         max-width: 600px;
     }
+    .banner-section h2 {
+        font-size: 20px; 
+        margin-bottom: 15px;
+    }
+    .metodos h2{
+        font-size: 20px; 
+        margin-bottom: 15px;
+
+    }
 }
 
 /* Smartphones grandes */
@@ -194,12 +256,10 @@
         height: 400px;
     }
 
-    .banner-image {
-        max-width: 90%;
-    }
+
 
     .testimonial-card {
-        width: 100%;
+        width: 60%;
         padding: 15px;
     }
 
@@ -209,6 +269,34 @@
 
     .partners-section .carousel {
         max-width: 400px;
+    }
+
+    /* Ajustar tamaño de los botones del carrusel */
+    .carousel-control-prev, .carousel-control-next {
+        width: 35px; /* Tamaño más pequeño para móviles */
+        height: 35px;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        padding: 8px; /* Ajustar el padding del ícono para que encaje */
+        width: 20px; /* Tamaño más pequeño del ícono */
+        height: 20px;
+    }
+    banner-section {
+        margin: 20px 10px; /* Reducir márgenes para ahorrar espacio */
+    }
+
+    .banner-section h2 {
+        font-size: 18px; /* Título más pequeño */
+        margin-bottom: 10px;
+    }
+
+    .banner-image {
+        max-width: 90%; /* Mantener proporción */
+        max-height: 200px; /* Limitar altura para no dominar la pantalla */
+        object-fit: cover; /* Recortar si es necesario para llenar el espacio */
+        border-radius: 8px; /* Bordes ligeramente más pequeños */
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
     }
 }
 
@@ -237,5 +325,17 @@
 
     .social-icon {
         font-size: 20px;
+    }
+
+    /* Ajustar tamaño de los botones del carrusel aún más */
+    .carousel-control-prev, .carousel-control-next {
+        width: 30px; /* Más pequeño para pantallas muy pequeñas */
+        height: 30px;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        padding: 6px; /* Reducir el padding */
+        width: 18px; /* Ícono más pequeño */
+        height: 18px;
     }
 }

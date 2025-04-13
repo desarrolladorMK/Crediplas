@@ -1,6 +1,21 @@
-*{
+/* Reseteo base y caja perfecta */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
 
+/* Evita desbordamientos y mantiene scroll vertical funcional */
+html, body {
+  width: 100%;
+  min-height: 100vh; /* ← Esto reemplaza height: 100% que puede causar conflictos */
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  position: relative; /* ← Importante para posicionar elementos hijos correctamente */
+}
+
+/* Por si usás scroll o efectos en móviles, esto ayuda */
+body {
+  -webkit-overflow-scrolling: touch;
 }

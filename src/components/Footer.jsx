@@ -19,7 +19,7 @@ const Footer = () => {
                     <ul>
                         <li><Link to="/Clinica">Clínicas</Link></li>
                         <li><Link to="/">Turismo Médico</Link></li>
-                        <li><Link to="">Implante Capilar</Link></li>
+                        <li><Link to="/implante">Implante Capilar</Link></li>
                         <li><Link to="/financiacion">Financiación</Link></li>
                         <li><Link to="">Contáctenos</Link></li>
                         <li><Link to="">Recomendaciones</Link></li>
