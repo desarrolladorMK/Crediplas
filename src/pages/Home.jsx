@@ -73,26 +73,38 @@ const Home = () => {
 
       <div className="banner-section">
         <h2>Conoce nuestros métodos de financiación</h2>
-        <img
-          className="banner-image"
-          src="/Baner.jpg"
-          alt="Banner de financiación"
-          loading="lazy"
-        />
+        <a
+          href="https://www.101fintech.com/SolicitudTarjeta.aspx?fnt=Crediplas"
+          className="banner-link"
+        >
+          <img
+            className="banner-image"
+            src="/Baner.jpg"
+            alt="Banner de financiación"
+            loading="lazy"
+          />
+        </a>
       </div>
 
       <div className="banner-section">
         <h2>Contáctanos</h2>
-        <img
-          className="banner-image"
-          src="/contacto.jpg"
-          alt="Banner de contacto"
-          loading="lazy"
-        />
+        <a
+          href="https://api.whatsapp.com/send?phone=573207334386"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="banner-link"
+        >
+          <img
+            className="banner-image"
+            src="/contacto.jpg"
+            alt="Banner de contacto"
+            loading="lazy"
+          />
+        </a>
       </div>
+
       <br />
       <br />
-      
 
       <div className="testimonials-section">
         <h2>Testimonios</h2>
@@ -103,7 +115,6 @@ const Home = () => {
               alt="Testimonio 1"
               className="testimonial-image"
               loading="lazy"
-              
             />
           </div>
           <div className="testimonial-card">
@@ -111,7 +122,7 @@ const Home = () => {
               src="/test2.jpg"
               alt="Testimonio 2"
               className="testimonial-image"
-               loading="lazy"
+              loading="lazy"
             />
           </div>
           <div className="testimonial-card">
@@ -119,7 +130,7 @@ const Home = () => {
               src="/test3.jpg"
               alt="Testimonio 3"
               className="testimonial-image"
-               loading="lazy"
+              loading="lazy"
             />
           </div>
         </div>
@@ -128,7 +139,12 @@ const Home = () => {
       <br />
       <div className="metodos">
         <h2>Metodos de Pago</h2>
-        <img className="metodos-image" src="/pse.png" alt="Banner" loading="lazy" />
+        <img
+          className="metodos-image"
+          src="/pse.png"
+          alt="Banner"
+          loading="lazy"
+        />
       </div>
       <br />
       <br />

@@ -21,7 +21,7 @@ const Footer = () => {
                         <li><Link to="/">Turismo Médico</Link></li>
                         <li><Link to="/implante">Implante Capilar</Link></li>
                         <li><Link to="/financiacion">Financiación</Link></li>
-                        <li><Link to="">Contáctenos</Link></li>
+                        <li><Link to="https://api.whatsapp.com/send?phone=573207334386">Contáctenos</Link></li>
                         <li><Link to="">Recomendaciones</Link></li>
                         <li><Link to="">Farmacia</Link></li>
                         <li><Link to="">Términos y Condiciones</Link></li>

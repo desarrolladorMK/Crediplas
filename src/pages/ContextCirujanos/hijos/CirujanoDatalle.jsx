@@ -24,7 +24,19 @@ const CirujanoDetalle = () => {
     <div>
       <Header />
       <div className="Detalle-container">
-        <img src={cirujano.detalle} alt={`Detalle de ${cirujano.nombre}`} className="Detalle-img" />
+        <img
+          src={cirujano.detalle}
+          alt={`Detalle de ${cirujano.nombre}`}
+          className="Detalle-img"
+        /> 
+        <a
+          href="https://101fintech.com/Crediplas/SolicitudFinanciacion.html "
+          target="_blank"
+          rel="noopener noreferrer"
+          className="financiacion-boton"
+        >
+          ¡HAGA CLIC AQUÍ PARA SOLICITAR FINANCIACIÓN DE TU CIRUGÍA PLÁSTICA CON CREDIPLAS COLOMBIA AHORA!
+        </a>
       </div>
       <Footer />
     </div>
