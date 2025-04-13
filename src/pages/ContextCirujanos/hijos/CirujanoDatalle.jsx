@@ -43,4 +43,5 @@ const CirujanoDetalle = () => {
   );
 };
 
+
 export default CirujanoDetalle;
