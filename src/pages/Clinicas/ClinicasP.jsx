@@ -8,6 +8,7 @@ import Clinica from "../../data/ClinicaData";
 const ClinicaP = () => {
     const navigate = useNavigate();
 
+    
     return (
         <div>
             <Header />
