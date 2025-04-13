@@ -13,7 +13,7 @@ const CirujanoP = () => {
         <div>
             <Header />
             <div className="cirujanos-container">
-                <h1>Cirujanos</h1>
+               
                 <div className="cirujanos-grid">
                     {cirujanos.map(cirujano => (
                        <div

@@ -23,7 +23,7 @@ const Header = () => {
                 <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
                     <li><Link to="/" onClick={toggleMenu}>Inicio</Link></li>
                     <li><Link to="" onClick={toggleMenu}>Turismo Médico</Link></li>
-                    <li><Link to="" onClick={toggleMenu}>Implante Capilar</Link></li>
+                    <li><Link to="/implante" onClick={toggleMenu}>Implante Capilar</Link></li>
                     <li><Link to="/financiacion" onClick={toggleMenu}>Financiación</Link></li>
                     <li><Link to="/Clinica" onClick={toggleMenu}>Clínicas</Link></li>
                     <li><Link to="/medicina" onClick={toggleMenu}>Medicina Estética</Link></li>

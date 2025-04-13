@@ -5,7 +5,13 @@
   padding: 40px 20px;
   background-color: #f8f9fa;
 }
-
+.cirujanosbariatricos {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+}
 .cirujanos-container h1 {
   font-size: 2.5rem;
   margin-bottom: 30px;
@@ -41,7 +47,7 @@
 }
 
 .cirujano-btn {
-  background-color: #007bff;
+  background-color: #003a44;
   color: white;
   border: none;
   padding: 12px 20px;
